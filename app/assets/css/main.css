@@ -1,2 +1,7 @@
 @import "@nuxt/ui";
 @import "tailwindcss";
+
+
+*{
+    font-family: "Trebuchet MS";
+}

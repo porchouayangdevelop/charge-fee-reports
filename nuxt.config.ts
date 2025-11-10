@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       titleTemplate: 'Charge-fee-report'
     }
   },
-
+  plugins: ['@/plugins/ApexCharts.ts'],
   modules: [
     '@nuxt/image',
     '@nuxt/scripts',
@@ -18,5 +18,22 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/eslint'
   ],
-  css: ['assets/css/main.css']
+  css: ['assets/css/main.css'],
+  ui: {
+    fonts: false,
+    colorMode: true,
+    theme: {
+      colors: ['primary', 'error', 'info', 'success', 'warning', 'secondary',
+        'gray',
+        'blue',
+        'green',
+        'purple',
+        'pink',
+        'orange',
+        'deep-orange',
+        'indigo',
+
+      ]
+    }
+  }
 })
